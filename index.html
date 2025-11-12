@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tessforma Studio</title>
+  <meta name="description" content="Tessforma Studio: Transforming ideas into impactful designs. Graphic Design, Publishing, Content Writing, and Website Creation for businesses and individuals.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/logo.png"/>
+  <!-- Open Graph for SEO -->
+  <meta property="og:title" content="Tessforma Studio">
+  <meta property="og:description" content="Transforming Ideas. Designing Impact.">
+  <meta property="og:image" content="images/logo.png">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Tessforma Studio logo" />
+    </div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- Header / Hero -->
+  <header class="hero">
+    <!-- TODO: add your hero image into images/hero.jpg -->
+    <img src="images/hero.jpg" alt="Creative workspace and branded design" class="hero-bg">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <img src="images/logo.png" alt="Tessforma Studio logo large" class="logo-hero"/>
+      <h1>Tessforma Studio</h1>
+      <p>Transforming Ideas. Designing Impact.</p>
+      <a href="#contact" class="cta-btn">Start Your Project</a>
+    </div>
+  </header>
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-img">
+      <!-- TODO: add your about image into images/about.jpg -->
+      <img src="images/about.jpg" alt="Our creative team" />
+    </div>
+    <h2>About Us</h2>
+    <p>
+      Tessforma Studio is a professional creative brand specializing in
+      Graphic Design, Desktop Publishing, Content Writing, and Website Creation.
+      We help individuals, businesses, and organizations communicate their message
+      with excellence, creativity, and clarity.
+    </p>
+  </section>
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <img src="images/services-design.png" alt="Graphic Design Icon"/>
+        <h3>Graphic Design</h3>
+      </div>
+      <div class="service-card">
+        <img src="images/services-publishing.png" alt="Desktop Publishing Icon"/>
+        <h3>Desktop Publishing</h3>
+      </div>
+      <div class="service-card">
+        <img src="images/services-writing.png" alt="Content Writing Icon"/>
+        <h3>Content Writing</h3>
+      </div>
+      <div class="service-card">
+        <img src="images/services-website.png" alt="Website Creation Icon"/>
+        <h3>Website Creation</h3>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Our Portfolio</h2>
+    <p>A glimpse of some of our creative projects.</p>
+    <div class="portfolio-grid">
+      <!-- TODO: add your portfolio images into images/portfolio1.jpg etc -->
+      <img src="images/portfolio1.jpg" alt="Design Work 1">
+      <img src="images/portfolio2.jpg" alt="Design Work 2">
+      <img src="images/portfolio3.jpg" alt="Design Work 3">
+    </div>
+    <a href="#contact" class="view-more-btn">Request Portfolio</a>
+  </section>
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <div class="section-img">
+      <!-- TODO: add your testimonials background image into images/testimonials-bg.jpg -->
+      <img src="images/testimonials-bg.jpg" alt="Happy clients" />
+    </div>
+    <h2>What Clients Say</h2>
+    <blockquote>"Professional, creative, and highly reliable." — Client A</blockquote>
+    <blockquote>"Tessforma Studio transformed our branding." — Client B</blockquote>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-img">
+      <!-- TODO: add your contact image into images/contact.jpg -->
+      <img src="images/contact.jpg" alt="Contact and communication illustration"/>
+    </div>
+    <h2>Contact Us</h2>
+    <p>We’d love to work with you.</p>
+    <form action="https://formspree.io/f/maylqgjz" method="POST" class="contact-form" autocomplete="off">
+      <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
+      <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+      <textarea name="message" rows="6" placeholder="Your Message" required aria-label="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p class="contact-details">📞 WhatsApp: <a href="https://wa.me/2349018341741">+234 901 834 1741</a></p>
+    <p>📧 Email: tessformastudio@gmail.com</p>
+    <div class="socials">
+      <!-- Provide icons if available, else use plain links -->
+      <a href="https://instagram.com/tessformastudio" aria-label="Instagram">Instagram</a>
+      <a href="https://facebook.com/tessformastudio" aria-label="Facebook">Facebook</a>
+      <a href="https://twitter.com/tessformastudio" aria-label="Twitter">Twitter</a>
+    </div>
+  </section>
+  <footer>
+    <img src="images/logo.png" alt="Tessforma Studio logo footer" class="logo-footer"/>
+    <span>&copy; 2025 Tessforma Studio. All Rights Reserved.</span>
+    <a href="/privacy.html">Privacy Policy</a>
+  </footer>
+  <script>
+    // Fade in sections on scroll
+    const sections = document.querySelectorAll('section');
+    const reveal = () => {
+      for (const sec of sections) {
+        const top = sec.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+          sec.classList.add('visible');
+        }
+      }
+    };
+    window.addEventListener('scroll', reveal);
+    reveal();
+  </script>
+</body>
+      </html>
